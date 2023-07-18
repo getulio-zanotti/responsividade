@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oranienbaum', 'Times New Roman', Times, serif;
+}
+body{
+    background-color: #C4C4C4;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: min(5% , 25px);
+    gap: 10px;
+}
+h1{
+    font-weight: 400;
+    text-transform: capitalize;
+}
+nav a{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+main{
+    padding: 15px;
+}
+button{
+    text-transform: uppercase;
+    align-self: center;
+    background-color: #3B3131;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    width: 40vw;
+    height: 4vh;
+}
+.menu{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.dish{
+    width: 40vw;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+.dish_name{
+    font-weight: 400;
+    font-size: 23px;
+}
+.price{
+    color: #9E1E1E;
+}
+.dish p{
+    text-align: justify;
+}
+.information{
+    display: flex;
+    flex-direction: row;
+}
+#auxiliar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#box{
+    background-color: #E9E9E9;
+    padding: 2%;
+}
+img{
+    width: 40%;
+}
+#reservation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-height: 30vh;
+}
+#reservation_tittle{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+#reservation_text{
+    text-align: center;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info_footer{
+    text-align: center;
+    padding: 2%;
+}
+@media screen and (min-width: 700px){
+    h1{
+        font-size: 5vw;
+    }
+    nav a{
+        font-size: 3vw;
+    }
+    button{
+        width: min(40vw, 240px);
+        height: 4vh;
+        font-weight: 600;
+    }
+    footer{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
